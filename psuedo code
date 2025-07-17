@@ -1,0 +1,60 @@
+Parts of the car
+  Sensors
+    Cameras
+      -Sensing camera- installed in upper part of vehicle and senses a wide area in front of the vehicle, uses and image sensor to convert light entering through the lens into electrical systsme with at are processed 
+                       through a system on the chip and cameras are equipped with microcomputers to issue control command to and external ECU
+      -Surround view camera- installed in front, back, left, and right of the body of vehicle to sense apporximately 1 meter around the perimeter of the car, equpped with multiple image sensors and aquired data is 
+                             synchronized into one omnidirectional image by another ECU
+      -Drive monotoring camera- installed witin the vehicle to monitor driver's health and actions(same as sensing camera)
+      -Terminology- system on chip(what is used to process the image data from sensors), MCU(relays instruction to vehicle itself such as apply break or turn wheel)
+    LIDAR
+      Emits laser pulses and tracks elapsed time for them pulses to reflect off the object, able to create 3D modles of suroundings, Frequency-modulated continous wave(FMCW) LIDAR uses a continous waveform that 
+      gradually increases in frequency over time  creating an inferogram wich cna determine the range and velocity of object and gives detailed infomration about the enviornment
+    GPS
+      We'll assume an infallible GPS that has no delay and always take us to the right place
+    Inertial Sensors
+      Comprised of accelerometer sensors(which mease linear accleration in the x,y, and z axis and can be used to provide velocity and position), and gyroscopic sensors(measure the angular rate of x,y,z axis allowing 
+      us to find the roll, pictch, and yaw of an object) this allows it to send data about the enviorment regardless of external conditions and can be used as failsafe to keep the car functionign until the other sensors
+      come back online
+
+Traffic Signs/Signals
+
+Road Markings/Conditions
+
+Road Layout
+
+Area
+
+Enviorment
+
+Other Cars/Vehicle types
+
+Other people
+
+Traffic/Flow of traffic
+
+Traffic reports/accidents
+
+Illegal actions
+
+
+
+Gas/fuel usage
+
+Wiper fluid
+
+Battery
+
+Brakes
+
+Steering
+
+Safety
+
+Mirror Alignment
+
+
+
+Physical Health
+
+What they want
