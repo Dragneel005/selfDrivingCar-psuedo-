@@ -18,6 +18,21 @@ Parts of the car
       come back online
 
 Traffic Signs/Signals
+  If a sign/signal is picked up sensing camera run image through database to find what the signal means
+  If signal says stop:
+    call to road markings/conditions
+    when you get response start going straight
+  If signal says go:
+    continue going forward
+  If signal has to do with the area:
+    call to road layout
+  If signal has to do with speed:
+    call to traffic/flow of traffic 
+    when you get response adjust to speed limit
+  If signal has to do with zone:
+    call to enviornment
+  If signal is a priority sign: 
+    call to other people
 
 Road Markings/Conditions
 
