@@ -1,102 +1,88 @@
-Parts of the car
+Parts of the Car
   Sensors
-    Cameras
-      -Sensing camera- installed in upper part of vehicle and senses a wide area in front of the vehicle, uses and image sensor to convert light entering through the lens into electrical systsme with at are processed 
-                       through a system on the chip and cameras are equipped with microcomputers to issue control command to and external ECU
-      -Surround view camera- installed in front, back, left, and right of the body of vehicle to sense apporximately 1 meter around the perimeter of the car, equpped with multiple image sensors and aquired data is 
-                             synchronized into one omnidirectional image by another ECU
-      -Drive monotoring camera- installed witin the vehicle to monitor driver's health and actions(same as sensing camera)
-      -Terminology- system on chip(what is used to process the image data from sensors), MCU(relays instruction to vehicle itself such as apply break or turn wheel)
+     Cameras
+       - Sensing camera – Installed in the upper part of the vehicle and senses a wide area in front of the vehicle. Uses an image sensor to convert light entering through the lens into electrical systems that are processed
+         through a system on the chip. Cameras are equipped with microcomputers to issue control commands to an external ECU.
+      - Surround view camera – Installed in front, back, left, and right of the body of the vehicle to sense approximately 1 meter around the perimeter of the car.
+         Equipped with multiple image sensors; acquired data is synchronized into one omnidirectional image by another ECU.
+      - Driver monitoring camera – Installed within the vehicle to monitor driver's health and actions (same as sensing camera).
+      - Terminology
+         - System on chip – Used to process the image data from sensors
+         - MCU – Relays instructions to the vehicle itself, such as apply brake or turn wheel
     LIDAR
-      Emits laser pulses and tracks elapsed time for them pulses to reflect off the object, able to create 3D modles of suroundings, Frequency-modulated continous wave(FMCW) LIDAR uses a continous waveform that 
-      gradually increases in frequency over time  creating an inferogram wich cna determine the range and velocity of object and gives detailed infomration about the enviornment
+       Emits laser pulses and tracks elapsed time for the pulses to reflect off objects. Able to create 3D models of surroundings.
+       Frequency-modulated continuous wave (FMCW) LIDAR uses a continuous waveform that gradually increases in frequency over time,
+       creating an inferogram which can determine the range and velocity of an object, and gives detailed information about the environment.
     GPS
-      We'll assume an infallible GPS that has no delay and always take us to the right place
+       We'll assume an infallible GPS that has no delay and always takes us to the right place.
     Inertial Sensors
-      Comprised of accelerometer sensors(which mease linear accleration in the x,y, and z axis and can be used to provide velocity and position), and gyroscopic sensors(measure the angular rate of x,y,z axis allowing 
-      us to find the roll, pictch, and yaw of an object) this allows it to send data about the enviorment regardless of external conditions and can be used as failsafe to keep the car functionign until the other sensors
-      come back online
+       Comprised of:
+         - Accelerometer sensors – Measure linear acceleration in the x, y, and z axis and can be used to provide velocity and position
+         - Gyroscopic sensors – Measure the angular rate of x, y, z axis allowing us to find the roll, pitch, and yaw of an object
+      This allows it to send data about the environment regardless of external conditions and can be used as a failsafe
+       to keep the car functioning until the other sensors come back online.
 
 Traffic Signs/Signals
-  If a sign/signal is picked up sensing camera run image through database to find what the signal means
-
-  If signal says stop:
-    call to road markings/conditions
-
-  If signal says go:
-    call to road markings/conditions
-    continue going forward
-
-  If signal has to do with the area:
-    call to road layout
-
-  If signal has to do with speed:
-    call to traffic/flow of traffic 
-    when you get response adjust to speed limit
-
-  If signal has to do with zone:
-    call to enviornment
-
-  If signal is a priority sign: 
-    call to other people
+  If a sign/signal is picked up by sensing camera:
+     - Run image through database to find what the signal means
+    If signal says stop:
+       - Call to road markings/conditions
+    If signal says go:
+       - Call to road markings/conditions
+       - Continue going forward
+    If signal has to do with the area:
+       - Call to road layout
+    If signal has to do with speed:
+       - Call to traffic/flow of traffic
+       - When you get response, adjust to speed limit
+    If signal has to do with zone:
+       - Call to road layout
+    If signal is a priority sign:
+       - Call to other people
 
 Road Markings/Conditions
-
   If call from stop:
-    use suround view camera to observe markings on road
-    when white lines/arrows are found call to brakes
-    if call from go comes:
-      continue on route
-
+     - Use surround view camera to observe markings on road
+     - When white lines/arrows are found, call to brakes
+     - If call from go comes:
+       - Continue on route
   If debris/hole on road:
-    call to other cars
-    when response comes back continue on route
-
+     - Call to other cars
+     - When response comes back, continue on route
   If lane markings:
-    check every 30 seconds to center
-    if lanemarkings are not centered:
-      call to steering
-
+     - Check every 30 seconds to center
+     - If lane markings are not centered:
+       - Call to steering
   If double white/yellow line:
-    send to steering do not cross
-
+     - Send to steering – do not cross
   If single white/dashed lines:
-    send to steering can cross
+     - Send to steering – can cross
 
 Road Layout
+If call from traffic signs/signals
+-If sign indicates road ahead will be dangerous -call to steering
+Scan road using LIDAR every 30 seconds to get topographical structure
+-if road is difficult to navigate -call to steering
+ Environment
+If cameras/LIDAR are impaired
+-switch to Inertial sensors 
+-call to steering
+-LIDAR scan
+ Other Cars/Vehicle Types
+ Other People
+ Traffic/Flow of Traffic
+ Traffic Reports/Accidents
+ Illegal Actions
 
-Area
-
-Enviorment
-
-Other Cars/Vehicle types
-
-Other people
-
-Traffic/Flow of traffic
-
-Traffic reports/accidents
-
-Illegal actions
-
-
-
-Gas/fuel usage
-
-Wiper fluid
-
-Battery
-
-Brakes
-
-Steering
-
-Safety
-
-Mirror Alignment
-
-
+Gas/Fuel Usage
+ Wiper Fluid
+ Battery
+ Brakes
+ Steering
+ Safety
+ Mirror Alignment
 
 Physical Health
+ What They Want
 
-What they want
+
