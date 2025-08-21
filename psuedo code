@@ -63,16 +63,22 @@ If call from traffic signs/signals
 -If sign indicates road ahead will be dangerous -call to steering
 Scan road using LIDAR every 30 seconds to get topographical structure
 -if road is difficult to navigate -call to steering
- Environment
-If cameras/LIDAR are impaired
--switch to Inertial sensors 
--call to steering
--LIDAR scan
- Other Cars/Vehicle Types
- Other People
- Traffic/Flow of Traffic
- Traffic Reports/Accidents
- Illegal Actions
+
+Environment
+
+  If cameras/LIDAR are impaired
+    -switch to Inertial sensors 
+    -call to steering
+    -LIDAR scan
+
+Other Cars/Vehicle Types
+
+  
+
+Other People
+Traffic/Flow of Traffic
+Traffic Reports/Accidents
+Illegal Actions
 
 Gas/Fuel Usage
  Wiper Fluid
